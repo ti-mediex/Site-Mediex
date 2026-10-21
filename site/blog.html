@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Blog | Mediex — Medicina e Segurança Ocupacional</title>
+<meta name="description" content="Artigos sobre PCMSO, PGR, LTCAT, eSocial SST, exames ocupacionais e treinamentos NR para empresas de Recife e Pernambuco.">
+<link rel="canonical" href="https://mediex.com.br/blog">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog | Mediex — Medicina e Segurança Ocupacional">
+<meta property="og:description" content="Artigos sobre PCMSO, PGR, LTCAT, eSocial SST, exames ocupacionais e treinamentos NR para empresas de Recife e Pernambuco.">
+<meta property="og:url" content="https://mediex.com.br/blog">
+<meta property="og:image" content="https://mediex.com.br/og-image.jpg">
+<meta name="theme-color" content="#c9282d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVEDV9ECZD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FVEDV9ECZD');
+  gtag('config', 'AW-18306236317', {'allow_enhanced_conversions': true});
+  // Conversao de WhatsApp: mesmo listener e mesmo rotulo do restante do site
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || typeof gtag !== 'function') return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('wa.me') === -1 && h.indexOf('whatsapp.com') === -1) return;
+    gtag('event', 'conversion', {'send_to': 'AW-18306236317/WMn1CJabxfEcEJ3_i5lE', 'value': 1.0, 'currency': 'BRL'});
+    gtag('event', 'clique_cta', {'cta': a.getAttribute('data-cta') || 'generico', 'canal': 'whatsapp', 'pagina': location.pathname});
+  }, true);
+</script>
+<style>
+.filtros{display:flex;flex-wrap:wrap;gap:.5rem;margin:0 0 2.2rem}
+.chip{font-weight:500;font-size:.88rem;line-height:1;font-family:inherit;border:1px solid var(--borda);background:#fff;color:var(--txt);padding:.55rem .95rem;border-radius:999px;cursor:pointer}
+.chip span{color:var(--leg);margin-left:.2rem}
+.chip[aria-pressed="true"]{background:var(--azul);border-color:var(--azul);color:#fff}
+.chip[aria-pressed="true"] span{color:#fff}
+.chip:focus-visible{outline:3px solid var(--azul);outline-offset:2px}
+.grade{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
+@media (max-width:960px){.grade{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:620px){.grade{grid-template-columns:1fr}}
+.art{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:1.5rem;display:flex;flex-direction:column;box-shadow:0 1px 2px rgba(35,38,42,.04);transition:border-color .15s}
+.art:hover{border-color:var(--azul)}
+.art-tema{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--azul);margin-bottom:.6rem}
+.art-tit{font-size:1.08rem;margin:0 0 .6rem}
+.art-tit a{text-decoration:none}.art-tit a:hover{color:var(--verm)}
+.art p{font-size:.94rem;margin:0 0 1.2rem;flex:1}
+.art-rod{display:flex;justify-content:space-between;align-items:center;font-size:.84rem;color:var(--leg);border-top:1px solid var(--borda);padding-top:.9rem}
+.art-rod a{text-decoration:none;color:var(--verm);font-weight:600}
+.cta{margin-top:3.5rem;background:var(--azul-claro);border-radius:12px;padding:2rem;display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:space-between}
+.cta h2{margin:0;font-size:1.3rem}
+</style>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "CollectionPage", "name": "Blog da Mediex", "url": "https://mediex.com.br/blog", "description": "Artigos sobre saúde e segurança do trabalho, PCMSO, PGR, LTCAT, eSocial SST e treinamentos NR.", "mainEntity": {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "url": "https://mediex.com.br/pgr-ppra-recife/blog/o-que-mudou-na-nr-1-2026", "name": "O que mudou na NR-1 em 2026: o guia completo para a sua empresa"}, {"@type": "ListItem", "position": 2, "url": "https://mediex.com.br/pgr-ppra-recife/blog/nr-1-riscos-psicossociais-2026", "name": "Riscos psicossociais na NR-1: o que sua empresa precisa fazer em 2026"}, {"@type": "ListItem", "position": 3, "url": "https://mediex.com.br/sipat/blog/como-organizar-sipat-engajadora", "name": "Como organizar uma SIPAT que realmente engaja seus colaboradores"}, {"@type": "ListItem", "position": 4, "url": "https://mediex.com.br/esocial-sst-recife/blog/s2210-cat-esocial-como-enviar", "name": "S-2210: como enviar a CAT pelo eSocial sem cair em multa"}, {"@type": "ListItem", "position": 5, "url": "https://mediex.com.br/exames-ocupacionais-recife/blog/aso-digital-como-funciona", "name": "ASO Digital: o que é, como funciona e por que toda empresa de Recife já está usando"}, {"@type": "ListItem", "position": 6, "url": "https://mediex.com.br/atendimento-in-company/blog/vantagens-atendimento-in-company", "name": "8 vantagens do atendimento in company com unidade móvel"}, {"@type": "ListItem", "position": 7, "url": "https://mediex.com.br/laudos-ergonomicos-recife/blog/dort-ler-prevenir-laudo-ergonomico", "name": "DORT e LER: como prevenir e o papel do laudo ergonômico"}, {"@type": "ListItem", "position": 8, "url": "https://mediex.com.br/ltcat-recife/blog/ltcat-aposentadoria-especial-2026", "name": "LTCAT e aposentadoria especial: o guia atualizado para 2026"}, {"@type": "ListItem", "position": 9, "url": "https://mediex.com.br/pcmso-recife/blog/pcmso-2026-novidades-nr7", "name": "PCMSO em 2026: o que mudou com a nova NR-7 e como adequar sua empresa"}, {"@type": "ListItem", "position": 10, "url": "https://mediex.com.br/treinamentos-nr-recife/blog/nr35-trabalho-altura-treinamento", "name": "NR-35: tudo sobre treinamento de trabalho em altura em 2026"}, {"@type": "ListItem", "position": 11, "url": "https://mediex.com.br/pgr-ppra-recife/blog/pgr-passo-a-passo-elaboracao", "name": "PGR passo a passo: como elaborar conforme a NR-1 em 2026"}, {"@type": "ListItem", "position": 12, "url": "https://mediex.com.br/higiene-ocupacional/blog/avaliacao-ruido-nho-01", "name": "Avaliação de ruído ocupacional: limites e metodologia NHO-01"}, {"@type": "ListItem", "position": 13, "url": "https://mediex.com.br/exames-ocupacionais-recife/blog/exame-admissional-guia-empresa", "name": "Exame admissional: tudo que o RH da sua empresa precisa saber em 2026"}, {"@type": "ListItem", "position": 14, "url": "https://mediex.com.br/atendimento-in-company/blog/unidade-movel-raio-x-como-funciona", "name": "Unidade móvel com Raio-X: como funciona o exame ocupacional na empresa"}, {"@type": "ListItem", "position": 15, "url": "https://mediex.com.br/laudos-ergonomicos-recife/blog/aet-quando-empresa-precisa", "name": "AET: quando sua empresa é obrigada a fazer Análise Ergonômica do Trabalho"}, {"@type": "ListItem", "position": 16, "url": "https://mediex.com.br/sipat/blog/10-temas-sipat-2026", "name": "10 temas atuais para SIPAT 2026: o que vai engajar este ano"}, {"@type": "ListItem", "position": 17, "url": "https://mediex.com.br/pcmso-recife/blog/pcmso-vs-pgr-diferencas", "name": "PCMSO vs PGR: diferenças, conexões e como o RH deve enxergar os dois"}, {"@type": "ListItem", "position": 18, "url": "https://mediex.com.br/esocial-sst-recife/blog/s2220-s2240-eventos-sst-eSocial", "name": "S-2220 e S-2240: o que cada evento SST do eSocial exige"}, {"@type": "ListItem", "position": 19, "url": "https://mediex.com.br/pcmso-recife/blog/pcmso-construcao-civil-recife", "name": "Como elaborar PCMSO para construção civil em Recife: requisitos NR-18 + NR-7"}, {"@type": "ListItem", "position": 20, "url": "https://mediex.com.br/treinamentos-nr-recife/blog/nr10-basico-vs-sep-diferenca", "name": "NR-10 Básico vs NR-10 SEP: qual treinamento sua equipe precisa?"}, {"@type": "ListItem", "position": 21, "url": "https://mediex.com.br/higiene-ocupacional/blog/ibutg-calor-medicao-trabalho", "name": "IBUTG: como medir exposição ao calor no ambiente de trabalho"}, {"@type": "ListItem", "position": 22, "url": "https://mediex.com.br/exames-ocupacionais-recife/blog/quanto-dura-exame-ocupacional", "name": "Quanto tempo dura um exame ocupacional? Tempo real na clínica e em domicílio"}, {"@type": "ListItem", "position": 23, "url": "https://mediex.com.br/laudos-ergonomicos-recife/blog/nr17-mobiliario-escritorio", "name": "NR-17 e escritório: como adequar mobiliário, iluminação e equipamentos"}, {"@type": "ListItem", "position": 24, "url": "https://mediex.com.br/atendimento-in-company/blog/como-organizar-mutirao-exames", "name": "Como organizar um mutirão de exames ocupacionais na sua empresa"}, {"@type": "ListItem", "position": 25, "url": "https://mediex.com.br/pgr-ppra-recife/blog/inventario-riscos-como-fazer", "name": "Inventário de riscos: como identificar perigos ocupacionais sem deixar nada escapar"}, {"@type": "ListItem", "position": 26, "url": "https://mediex.com.br/sipat/blog/sipat-empresa-pequena-obrigatoria", "name": "SIPAT em empresa pequena: é obrigatória? Como fazer com baixo orçamento"}, {"@type": "ListItem", "position": 27, "url": "https://mediex.com.br/ltcat-recife/blog/ppp-individual-empresa-precisa", "name": "PPP individual: por que sua empresa precisa emitir para todos os colaboradores"}, {"@type": "ListItem", "position": 28, "url": "https://mediex.com.br/esocial-sst-recife/blog/multas-esocial-sst-2026", "name": "Multas do eSocial SST em 2026: valores, como evitar e o que mudou"}, {"@type": "ListItem", "position": 29, "url": "https://mediex.com.br/pgr-ppra-recife/blog/migracao-ppra-para-pgr", "name": "Migração do PPRA para o PGR: como adequar sua empresa em 2026"}, {"@type": "ListItem", "position": 30, "url": "https://mediex.com.br/treinamentos-nr-recife/blog/reciclagem-nr-quando-obrigatoria", "name": "Reciclagem de NR: quando é obrigatória, prazos e quanto custa em Recife"}, {"@type": "ListItem", "position": 31, "url": "https://mediex.com.br/ltcat-recife/blog/insalubridade-periculosidade-laudo", "name": "Insalubridade e periculosidade: o papel do LTCAT no enquadramento"}, {"@type": "ListItem", "position": 32, "url": "https://mediex.com.br/higiene-ocupacional/blog/agentes-quimicos-amostragem-nr15", "name": "Agentes químicos: amostragem e laudo conforme NR-15"}]}}</script>
+<style>
+:root{--verm:#c9282d;--verm-esc:#a82126;--azul:#729abd;--azul-claro:#eef3f8;--tit:#23262a;--txt:#5a6066;--leg:#8a9096;
+--sup:#f6f7f8;--borda:#e7e9eb;--branco:#fff;--zap:#00c758}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--branco);color:var(--txt);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{color:var(--tit);line-height:1.2;letter-spacing:-.015em;margin:0 0 .5em;font-weight:600}
+h1{font-size:clamp(2rem,4.6vw,2.9rem)}
+h2{font-size:clamp(1.4rem,3vw,1.9rem)}
+h3{font-size:1.1rem}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.topo{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--borda)}
+.topo-in{display:flex;align-items:center;gap:1.5rem;padding:.8rem 0}
+.topo img{height:36px;width:auto}
+.menu{display:flex;gap:.2rem;margin-left:auto;flex-wrap:wrap}
+.menu a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--txt);padding:.45rem .8rem;border-radius:8px}
+.menu a:hover,.menu a[aria-current]{color:var(--verm);background:#fbeaea}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:0;border-radius:10px;padding:.8rem 1.35rem;font-weight:600;font-size:.95rem;line-height:1.2;font-family:inherit;text-decoration:none;cursor:pointer;transition:background .15s,transform .15s}
+.btn-verm{background:var(--verm);color:#fff}.btn-verm:hover{background:var(--verm-esc)}
+.btn-azul{background:var(--azul);color:#fff}.btn-azul:hover{filter:brightness(.93)}
+.btn-zap{background:var(--zap);color:#fff}
+.btn:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+.btn[disabled]{opacity:.65;cursor:progress}
+.cab{padding:clamp(3rem,7vw,5rem) 0 clamp(2rem,4vw,2.8rem);border-bottom:1px solid var(--borda)}
+.olho{display:inline-block;font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--verm);margin-bottom:.8rem}
+.sub{font-size:1.08rem;max-width:62ch;margin:0}
+.sec{padding:clamp(3rem,7vw,6rem) 0}
+.rodape{background:var(--sup);border-top:1px solid var(--borda);padding:2.4rem 0;font-size:.88rem;color:var(--leg)}
+.rodape-in{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+.rodape b{color:var(--tit);font-weight:600}
+.rodape a{text-decoration:none;color:var(--txt)}.rodape a:hover{color:var(--verm)}
+.flutua{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.flutua svg{width:28px;height:28px;fill:#fff}
+@media (max-width:760px){.menu{display:none}.topo-in .btn{margin-left:auto}}
+</style>
+<!-- RD Station Marketing --><script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/3421751a-9f42-4573-bc1b-40d9bc00a05d-loader.js"></script></head>
+<body>
+<header class="topo"><div class="wrap topo-in"><a href="/" aria-label="Mediex - página inicial"><img src="/logo-mediex.svg" alt="Mediex" width="143" height="36"></a><nav class="menu" aria-label="Principal"><a href="/">Início</a><a href="/#servicos">Serviços</a><a href="/#sobre">Sobre</a><a href="/blog" aria-current="page">Blog</a><a href="/#contato">Contato</a></nav><a class="btn btn-verm" href="/orcamento">Solicitar orçamento</a></div></header>
+<main>
+
+<section class="cab"><div class="wrap">
+  <span class="olho">Blog</span>
+  <h1>Conteúdo sobre saúde e segurança do trabalho</h1>
+  <p class="sub">32 artigos sobre PCMSO, PGR, LTCAT, eSocial SST, exames ocupacionais e treinamentos — escritos para quem precisa manter a empresa em dia com as normas.</p>
+</div></section>
+<section class="sec"><div class="wrap">
+  <div class="filtros" role="group" aria-label="Filtrar por tema"><button class="chip" type="button" data-tema="" aria-pressed="true">Todos <span>32</span></button><button class="chip" type="button" data-tema="Atendimento in company" aria-pressed="false">Atendimento in company <span>3</span></button><button class="chip" type="button" data-tema="Ergonomia" aria-pressed="false">Ergonomia <span>3</span></button><button class="chip" type="button" data-tema="Exames ocupacionais" aria-pressed="false">Exames ocupacionais <span>3</span></button><button class="chip" type="button" data-tema="Higiene ocupacional" aria-pressed="false">Higiene ocupacional <span>3</span></button><button class="chip" type="button" data-tema="LTCAT" aria-pressed="false">LTCAT <span>3</span></button><button class="chip" type="button" data-tema="PCMSO" aria-pressed="false">PCMSO <span>3</span></button><button class="chip" type="button" data-tema="PGR" aria-pressed="false">PGR <span>5</span></button><button class="chip" type="button" data-tema="SIPAT" aria-pressed="false">SIPAT <span>3</span></button><button class="chip" type="button" data-tema="Treinamentos NR" aria-pressed="false">Treinamentos NR <span>3</span></button><button class="chip" type="button" data-tema="eSocial SST" aria-pressed="false">eSocial SST <span>3</span></button></div>
+  <div class="grade" id="grade">
+      <article class="art" data-tema="PGR">
+        <span class="art-tema">PGR</span>
+        <h2 class="art-tit"><a href="/pgr-ppra-recife/blog/o-que-mudou-na-nr-1-2026">O que mudou na NR-1 em 2026: o guia completo para a sua empresa</a></h2>
+        <p>Entenda o que mudou na NR-1 em 2026: GRO e PGR, riscos psicossociais obrigatórios, novos prazos de fiscalização e o checklist para adequar sua empresa em Recife.</p>
+        <div class="art-rod"><time datetime="2026-07-07">7 jul 2026</time><a href="/pgr-ppra-recife/blog/o-que-mudou-na-nr-1-2026" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="PGR">
+        <span class="art-tema">PGR</span>
+        <h2 class="art-tit"><a href="/pgr-ppra-recife/blog/nr-1-riscos-psicossociais-2026">Riscos psicossociais na NR-1: o que sua empresa precisa fazer em 2026</a></h2>
+        <p>A NR-1 passou a exigir o gerenciamento de riscos psicossociais no PGR. Veja o que mudou, os prazos de fiscalização, exemplos práticos e como adequar sua empresa em Recife.</p>
+        <div class="art-rod"><time datetime="2026-06-30">30 jun 2026</time><a href="/pgr-ppra-recife/blog/nr-1-riscos-psicossociais-2026" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="SIPAT">
+        <span class="art-tema">SIPAT</span>
+        <h2 class="art-tit"><a href="/sipat/blog/como-organizar-sipat-engajadora">Como organizar uma SIPAT que realmente engaja seus colaboradores</a></h2>
+        <p>Passo a passo para organizar SIPAT engajadora em Recife: planejamento, temas, dinâmicas, palestrantes e como medir resultado.</p>
+        <div class="art-rod"><time datetime="2026-04-28">28 abr 2026</time><a href="/sipat/blog/como-organizar-sipat-engajadora" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="eSocial SST">
+        <span class="art-tema">eSocial SST</span>
+        <h2 class="art-tit"><a href="/esocial-sst-recife/blog/s2210-cat-esocial-como-enviar">S-2210: como enviar a CAT pelo eSocial sem cair em multa</a></h2>
+        <p>Passo a passo para enviar o evento S-2210 (CAT) no eSocial: prazos, campos obrigatórios, erros comuns e como evitar multa em Recife.</p>
+        <div class="art-rod"><time datetime="2026-04-25">25 abr 2026</time><a href="/esocial-sst-recife/blog/s2210-cat-esocial-como-enviar" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Exames ocupacionais">
+        <span class="art-tema">Exames ocupacionais</span>
+        <h2 class="art-tit"><a href="/exames-ocupacionais-recife/blog/aso-digital-como-funciona">ASO Digital: o que é, como funciona e por que toda empresa de Recife já está usando</a></h2>
+        <p>Entenda como funciona o ASO digital em Recife, sua validade jurídica, integração com eSocial e por que substitui o papel. Guia 2026 com exemplos práticos.</p>
+        <div class="art-rod"><time datetime="2026-04-22">22 abr 2026</time><a href="/exames-ocupacionais-recife/blog/aso-digital-como-funciona" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Atendimento in company">
+        <span class="art-tema">Atendimento in company</span>
+        <h2 class="art-tit"><a href="/atendimento-in-company/blog/vantagens-atendimento-in-company">8 vantagens do atendimento in company com unidade móvel</a></h2>
+        <p>Por que cada vez mais empresas em Recife optam por atendimento in company: 8 vantagens reais comparadas ao deslocamento à clínica.</p>
+        <div class="art-rod"><time datetime="2026-04-20">20 abr 2026</time><a href="/atendimento-in-company/blog/vantagens-atendimento-in-company" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Ergonomia">
+        <span class="art-tema">Ergonomia</span>
+        <h2 class="art-tit"><a href="/laudos-ergonomicos-recife/blog/dort-ler-prevenir-laudo-ergonomico">DORT e LER: como prevenir e o papel do laudo ergonômico</a></h2>
+        <p>Como prevenir DORT e LER nos colaboradores e o que o laudo ergonômico revela. Diferença, causas, sintomas e plano de prevenção.</p>
+        <div class="art-rod"><time datetime="2026-04-18">18 abr 2026</time><a href="/laudos-ergonomicos-recife/blog/dort-ler-prevenir-laudo-ergonomico" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="LTCAT">
+        <span class="art-tema">LTCAT</span>
+        <h2 class="art-tit"><a href="/ltcat-recife/blog/ltcat-aposentadoria-especial-2026">LTCAT e aposentadoria especial: o guia atualizado para 2026</a></h2>
+        <p>Como o LTCAT comprova tempo especial para aposentadoria no INSS em 2026: requisitos, agentes nocivos, prazo e como sua empresa em Recife pode adequar.</p>
+        <div class="art-rod"><time datetime="2026-04-17">17 abr 2026</time><a href="/ltcat-recife/blog/ltcat-aposentadoria-especial-2026" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="PCMSO">
+        <span class="art-tema">PCMSO</span>
+        <h2 class="art-tit"><a href="/pcmso-recife/blog/pcmso-2026-novidades-nr7">PCMSO em 2026: o que mudou com a nova NR-7 e como adequar sua empresa</a></h2>
+        <p>O que mudou no PCMSO em 2026 com a NR-7 atualizada: integração com PGR, eSocial, ASO digital e novas responsabilidades do médico coordenador.</p>
+        <div class="art-rod"><time datetime="2026-04-15">15 abr 2026</time><a href="/pcmso-recife/blog/pcmso-2026-novidades-nr7" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Treinamentos NR">
+        <span class="art-tema">Treinamentos NR</span>
+        <h2 class="art-tit"><a href="/treinamentos-nr-recife/blog/nr35-trabalho-altura-treinamento">NR-35: tudo sobre treinamento de trabalho em altura em 2026</a></h2>
+        <p>Treinamento NR-35 em Recife: carga horária, conteúdo, validade, reciclagem e quem precisa fazer. Atualizado para 2026.</p>
+        <div class="art-rod"><time datetime="2026-04-12">12 abr 2026</time><a href="/treinamentos-nr-recife/blog/nr35-trabalho-altura-treinamento" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="PGR">
+        <span class="art-tema">PGR</span>
+        <h2 class="art-tit"><a href="/pgr-ppra-recife/blog/pgr-passo-a-passo-elaboracao">PGR passo a passo: como elaborar conforme a NR-1 em 2026</a></h2>
+        <p>Guia completo para elaborar o PGR conforme NR-1: inventário de riscos, matriz de probabilidade, plano de ação e revisão. Aplicado em empresas de Recife.</p>
+        <div class="art-rod"><time datetime="2026-04-10">10 abr 2026</time><a href="/pgr-ppra-recife/blog/pgr-passo-a-passo-elaboracao" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Higiene ocupacional">
+        <span class="art-tema">Higiene ocupacional</span>
+        <h2 class="art-tit"><a href="/higiene-ocupacional/blog/avaliacao-ruido-nho-01">Avaliação de ruído ocupacional: limites e metodologia NHO-01</a></h2>
+        <p>Como avaliar ruído ocupacional pela NHO-01: dosimetria pessoal, limites NR-15, aplicação prática em empresas de Recife.</p>
+        <div class="art-rod"><time datetime="2026-04-09">9 abr 2026</time><a href="/higiene-ocupacional/blog/avaliacao-ruido-nho-01" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Exames ocupacionais">
+        <span class="art-tema">Exames ocupacionais</span>
+        <h2 class="art-tit"><a href="/exames-ocupacionais-recife/blog/exame-admissional-guia-empresa">Exame admissional: tudo que o RH da sua empresa precisa saber em 2026</a></h2>
+        <p>Exame admissional: quando é obrigatório, exames inclusos, prazo, validade, riscos e como contratar em Recife. Guia prático para RH com checklist NR-7.</p>
+        <div class="art-rod"><time datetime="2026-04-08">8 abr 2026</time><a href="/exames-ocupacionais-recife/blog/exame-admissional-guia-empresa" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Atendimento in company">
+        <span class="art-tema">Atendimento in company</span>
+        <h2 class="art-tit"><a href="/atendimento-in-company/blog/unidade-movel-raio-x-como-funciona">Unidade móvel com Raio-X: como funciona o exame ocupacional na empresa</a></h2>
+        <p>Como funciona o Raio-X em unidade móvel para exame ocupacional in company: segurança, qualidade da imagem, tempo e quem opera.</p>
+        <div class="art-rod"><time datetime="2026-04-07">7 abr 2026</time><a href="/atendimento-in-company/blog/unidade-movel-raio-x-como-funciona" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Ergonomia">
+        <span class="art-tema">Ergonomia</span>
+        <h2 class="art-tit"><a href="/laudos-ergonomicos-recife/blog/aet-quando-empresa-precisa">AET: quando sua empresa é obrigada a fazer Análise Ergonômica do Trabalho</a></h2>
+        <p>Quando a empresa é obrigada a fazer AET (Análise Ergonômica do Trabalho) conforme NR-17 e o que considerar antes de contratar em Recife.</p>
+        <div class="art-rod"><time datetime="2026-04-05">5 abr 2026</time><a href="/laudos-ergonomicos-recife/blog/aet-quando-empresa-precisa" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="SIPAT">
+        <span class="art-tema">SIPAT</span>
+        <h2 class="art-tit"><a href="/sipat/blog/10-temas-sipat-2026">10 temas atuais para SIPAT 2026: o que vai engajar este ano</a></h2>
+        <p>10 temas atuais e engajadores para SIPAT 2026 em Recife: saúde mental, IA, sustentabilidade, ergonomia e mais.</p>
+        <div class="art-rod"><time datetime="2026-04-03">3 abr 2026</time><a href="/sipat/blog/10-temas-sipat-2026" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="PCMSO">
+        <span class="art-tema">PCMSO</span>
+        <h2 class="art-tit"><a href="/pcmso-recife/blog/pcmso-vs-pgr-diferencas">PCMSO vs PGR: diferenças, conexões e como o RH deve enxergar os dois</a></h2>
+        <p>PCMSO e PGR têm objetivos diferentes mas precisam estar integrados. Veja a diferença, quem assina cada um e como o RH garante coerência.</p>
+        <div class="art-rod"><time datetime="2026-04-02">2 abr 2026</time><a href="/pcmso-recife/blog/pcmso-vs-pgr-diferencas" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="eSocial SST">
+        <span class="art-tema">eSocial SST</span>
+        <h2 class="art-tit"><a href="/esocial-sst-recife/blog/s2220-s2240-eventos-sst-eSocial">S-2220 e S-2240: o que cada evento SST do eSocial exige</a></h2>
+        <p>S-2220 (Monitoramento da Saúde) e S-2240 (Condições Ambientais): obrigatoriedade, prazos, integração ao PCMSO/PGR e como evitar multas.</p>
+        <div class="art-rod"><time datetime="2026-04-01">1 abr 2026</time><a href="/esocial-sst-recife/blog/s2220-s2240-eventos-sst-eSocial" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="PCMSO">
+        <span class="art-tema">PCMSO</span>
+        <h2 class="art-tit"><a href="/pcmso-recife/blog/pcmso-construcao-civil-recife">Como elaborar PCMSO para construção civil em Recife: requisitos NR-18 + NR-7</a></h2>
+        <p>PCMSO para construção civil em Recife com requisitos da NR-18: exames específicos por função, integração ao PCMAT e cuidados com obras temporárias.</p>
+        <div class="art-rod"><time datetime="2026-03-30">30 mar 2026</time><a href="/pcmso-recife/blog/pcmso-construcao-civil-recife" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Treinamentos NR">
+        <span class="art-tema">Treinamentos NR</span>
+        <h2 class="art-tit"><a href="/treinamentos-nr-recife/blog/nr10-basico-vs-sep-diferenca">NR-10 Básico vs NR-10 SEP: qual treinamento sua equipe precisa?</a></h2>
+        <p>Diferença entre NR-10 Básico e NR-10 SEP: para quem é cada um, carga horária, conteúdo e validade. Guia para eletricistas e indústrias de Recife.</p>
+        <div class="art-rod"><time datetime="2026-03-28">28 mar 2026</time><a href="/treinamentos-nr-recife/blog/nr10-basico-vs-sep-diferenca" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Higiene ocupacional">
+        <span class="art-tema">Higiene ocupacional</span>
+        <h2 class="art-tit"><a href="/higiene-ocupacional/blog/ibutg-calor-medicao-trabalho">IBUTG: como medir exposição ao calor no ambiente de trabalho</a></h2>
+        <p>Como medir IBUTG (Índice de Bulbo Úmido Termômetro de Globo) conforme NR-15 e NHO-06. Limites por carga térmica e funções típicas em Recife.</p>
+        <div class="art-rod"><time datetime="2026-03-26">26 mar 2026</time><a href="/higiene-ocupacional/blog/ibutg-calor-medicao-trabalho" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Exames ocupacionais">
+        <span class="art-tema">Exames ocupacionais</span>
+        <h2 class="art-tit"><a href="/exames-ocupacionais-recife/blog/quanto-dura-exame-ocupacional">Quanto tempo dura um exame ocupacional? Tempo real na clínica e em domicílio</a></h2>
+        <p>Quanto tempo leva o exame ocupacional na clínica e in company. Cronograma real do admissional ao ASO digital, com dicas para reduzir tempo perdido.</p>
+        <div class="art-rod"><time datetime="2026-03-25">25 mar 2026</time><a href="/exames-ocupacionais-recife/blog/quanto-dura-exame-ocupacional" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Ergonomia">
+        <span class="art-tema">Ergonomia</span>
+        <h2 class="art-tit"><a href="/laudos-ergonomicos-recife/blog/nr17-mobiliario-escritorio">NR-17 e escritório: como adequar mobiliário, iluminação e equipamentos</a></h2>
+        <p>Como adequar mobiliário, iluminação e equipamentos de escritório conforme NR-17. Checklist prático para evitar DORT/LER em Recife.</p>
+        <div class="art-rod"><time datetime="2026-03-22">22 mar 2026</time><a href="/laudos-ergonomicos-recife/blog/nr17-mobiliario-escritorio" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Atendimento in company">
+        <span class="art-tema">Atendimento in company</span>
+        <h2 class="art-tit"><a href="/atendimento-in-company/blog/como-organizar-mutirao-exames">Como organizar um mutirão de exames ocupacionais na sua empresa</a></h2>
+        <p>Passo a passo para organizar mutirão de exames ocupacionais in company com unidade móvel. Logística, comunicação interna e checklist completo.</p>
+        <div class="art-rod"><time datetime="2026-03-20">20 mar 2026</time><a href="/atendimento-in-company/blog/como-organizar-mutirao-exames" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="PGR">
+        <span class="art-tema">PGR</span>
+        <h2 class="art-tit"><a href="/pgr-ppra-recife/blog/inventario-riscos-como-fazer">Inventário de riscos: como identificar perigos ocupacionais sem deixar nada escapar</a></h2>
+        <p>Como fazer inventário de riscos completo para o PGR: técnicas, checklists e armadilhas comuns. Aplicado a empresas de Recife.</p>
+        <div class="art-rod"><time datetime="2026-03-18">18 mar 2026</time><a href="/pgr-ppra-recife/blog/inventario-riscos-como-fazer" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="SIPAT">
+        <span class="art-tema">SIPAT</span>
+        <h2 class="art-tit"><a href="/sipat/blog/sipat-empresa-pequena-obrigatoria">SIPAT em empresa pequena: é obrigatória? Como fazer com baixo orçamento</a></h2>
+        <p>SIPAT em empresa pequena: quando é obrigatória, como fazer com orçamento enxuto e modelo prático em Recife.</p>
+        <div class="art-rod"><time datetime="2026-03-16">16 mar 2026</time><a href="/sipat/blog/sipat-empresa-pequena-obrigatoria" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="LTCAT">
+        <span class="art-tema">LTCAT</span>
+        <h2 class="art-tit"><a href="/ltcat-recife/blog/ppp-individual-empresa-precisa">PPP individual: por que sua empresa precisa emitir para todos os colaboradores</a></h2>
+        <p>O que é o PPP, quem deve emitir, quando entregar e como o eSocial mudou a obrigatoriedade. Guia para empresas de Recife.</p>
+        <div class="art-rod"><time datetime="2026-03-15">15 mar 2026</time><a href="/ltcat-recife/blog/ppp-individual-empresa-precisa" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="eSocial SST">
+        <span class="art-tema">eSocial SST</span>
+        <h2 class="art-tit"><a href="/esocial-sst-recife/blog/multas-esocial-sst-2026">Multas do eSocial SST em 2026: valores, como evitar e o que mudou</a></h2>
+        <p>Valores atualizados das multas do eSocial SST em 2026: S-2210, S-2220, S-2240 e como sua empresa em Recife pode evitar.</p>
+        <div class="art-rod"><time datetime="2026-03-14">14 mar 2026</time><a href="/esocial-sst-recife/blog/multas-esocial-sst-2026" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="PGR">
+        <span class="art-tema">PGR</span>
+        <h2 class="art-tit"><a href="/pgr-ppra-recife/blog/migracao-ppra-para-pgr">Migração do PPRA para o PGR: como adequar sua empresa em 2026</a></h2>
+        <p>Sua empresa ainda tem PPRA? Veja como migrar para o PGR conforme a NR-1, com cronograma, requisitos novos e checklist completo.</p>
+        <div class="art-rod"><time datetime="2026-03-12">12 mar 2026</time><a href="/pgr-ppra-recife/blog/migracao-ppra-para-pgr" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Treinamentos NR">
+        <span class="art-tema">Treinamentos NR</span>
+        <h2 class="art-tit"><a href="/treinamentos-nr-recife/blog/reciclagem-nr-quando-obrigatoria">Reciclagem de NR: quando é obrigatória, prazos e quanto custa em Recife</a></h2>
+        <p>Reciclagem de NR-35, NR-10, NR-33, NR-11 e outras: quando é obrigatória, carga horária, custo médio e como controlar vencimentos.</p>
+        <div class="art-rod"><time datetime="2026-03-08">8 mar 2026</time><a href="/treinamentos-nr-recife/blog/reciclagem-nr-quando-obrigatoria" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="LTCAT">
+        <span class="art-tema">LTCAT</span>
+        <h2 class="art-tit"><a href="/ltcat-recife/blog/insalubridade-periculosidade-laudo">Insalubridade e periculosidade: o papel do LTCAT no enquadramento</a></h2>
+        <p>Como o LTCAT define adicional de insalubridade e periculosidade: graus, valores, base legal e papel do engenheiro de segurança.</p>
+        <div class="art-rod"><time datetime="2026-03-05">5 mar 2026</time><a href="/ltcat-recife/blog/insalubridade-periculosidade-laudo" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+      <article class="art" data-tema="Higiene ocupacional">
+        <span class="art-tema">Higiene ocupacional</span>
+        <h2 class="art-tit"><a href="/higiene-ocupacional/blog/agentes-quimicos-amostragem-nr15">Agentes químicos: amostragem e laudo conforme NR-15</a></h2>
+        <p>Como amostrar agentes químicos (gases, vapores, poeiras) conforme NR-15 e NHOs. Limites, metodologia e laudo técnico em Recife.</p>
+        <div class="art-rod"><time datetime="2026-03-04">4 mar 2026</time><a href="/higiene-ocupacional/blog/agentes-quimicos-amostragem-nr15" aria-hidden="true" tabindex="-1">Ler artigo →</a></div>
+      </article>
+  </div>
+  <p id="vazio" hidden>Nenhum artigo neste tema.</p>
+  <div class="cta">
+    <h2>Precisa de ajuda com a documentação da sua empresa?</h2>
+    <a class="btn btn-verm" href="/orcamento">Solicitar orçamento</a>
+  </div>
+</div></section>
+<script>
+(function(){
+  var chips = document.querySelectorAll('.chip'), arts = document.querySelectorAll('.art');
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){
+      var t = c.getAttribute('data-tema'), n = 0;
+      chips.forEach(function(x){ x.setAttribute('aria-pressed', String(x === c)); });
+      arts.forEach(function(a){ var ok = !t || a.getAttribute('data-tema') === t; a.hidden = !ok; if (ok) n++; });
+      document.getElementById('vazio').hidden = n > 0;
+    });
+  });
+})();
+</script>
+</main>
+<footer class="rodape"><div class="wrap rodape-in"><div><b>Mediex</b> — Medicina e Segurança Ocupacional<br>R. Gen. Góes Monteiro, 448 — Imbiribeira, Recife/PE · <a href="tel:+558130729818">(81) 3072-9818</a></div><div><a href="/politica-de-privacidade">Política de Privacidade</a></div></div></footer><a class="flutua" href="https://wa.me/558130729818?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" data-cta="flutuante" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg></a>
+</body>
+</html>

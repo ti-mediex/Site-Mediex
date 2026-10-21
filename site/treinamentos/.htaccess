@@ -1,0 +1,4 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^mediex\.com\.br\treinamentos $ [OR]
+RewriteRule ^(.*)$ https://app-treinamentos.vercel.app/$1 [L,R=301]

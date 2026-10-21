@@ -1,0 +1,5 @@
+# Byte a byte, sempre. Este repositorio guarda o build exportado do Next.js, e o
+# payload RSC traz o TAMANHO EM BYTES de cada bloco T no proprio cabecalho
+# (id:T<hex>,<texto>). Qualquer normalizacao de fim de linha no checkout muda
+# esses tamanhos e quebra o site no navegador. Nada de conversao: * -text.
+* -text

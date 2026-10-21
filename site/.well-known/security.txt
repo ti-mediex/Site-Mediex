@@ -1,0 +1,36 @@
+# ==============================================================
+# security.txt - Mediex Solucoes em Saude e Seguranca Ocupacional
+# https://mediex.com.br
+#
+# Canal para relato responsavel de vulnerabilidades (RFC 9116).
+# Se voce encontrou uma falha neste dominio, fale conosco pelos
+# contatos abaixo antes de divulgar publicamente.
+#
+# MANUTENCAO: o campo Expires e obrigatorio e tem prazo. Renovar
+# ate 2027-06-30, senao o arquivo passa a ser considerado invalido
+# pelos scanners e pelos pesquisadores.
+# ==============================================================
+
+Contact: mailto:comercial@mediex.com.br
+Contact: tel:+55-81-3072-9818
+
+Expires: 2027-06-30T23:59:59.000Z
+
+Preferred-Languages: pt-BR, en
+
+Canonical: https://mediex.com.br/.well-known/security.txt
+
+# --------------------------------------------------------------
+# Escopo
+# --------------------------------------------------------------
+# No escopo:      mediex.com.br e seus subdominios
+# Fora do escopo: servicos de terceiros usados pelo site
+#                 (Google, Cloudflare, Supabase, Elfsight) - relate
+#                 diretamente ao fornecedor.
+#
+# Pedimos que nao sejam executados testes de negacao de servico,
+# engenharia social com nossa equipe ou qualquer acao que exponha
+# dados de pacientes ou clientes. Este site trata dados de saude
+# ocupacional: preserve-os.
+#
+# Retorno em ate 5 dias uteis.

@@ -1,0 +1,99 @@
+# Mediex - site estatico Next.js (output: export)
+# Atualizado 2026-05-19 - headers de seguranca + canonical + HTTPS
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # 1) Forcar HTTPS (fallback caso Cloudflare nao faca)
+  RewriteCond %{HTTPS} !=on
+  RewriteCond %{HTTP:X-Forwarded-Proto} !=https
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # 2) Canonical: www.mediex.com.br -> mediex.com.br (sem www)
+  RewriteCond %{HTTP_HOST} ^www\.mediex\.com\.br$ [NC]
+  RewriteRule ^(.*)$ https://mediex.com.br/$1 [L,R=301]
+</IfModule>
+
+# Nao redirecionar /slug -> /slug/ quando existe pasta interna do Next
+<IfModule mod_dir.c>
+  DirectorySlash Off
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  # Se ja e arquivo (.html, .css, .js, .svg, imagem, etc.) -> serve direto
+  RewriteCond %{REQUEST_FILENAME} -f
+  RewriteRule ^ - [L]
+
+  # Para rotas (com ou sem barra final), se existir <rota>.html no root -> serve
+  RewriteCond %{DOCUMENT_ROOT}/$1.html -f
+  RewriteRule ^(.+?)/?$ /$1.html [L]
+</IfModule>
+
+ErrorDocument 404 /404.html
+
+Options -Indexes
+
+# Bloquear acesso a arquivos sensiveis
+<FilesMatch "^\.(htaccess|htpasswd|env|git)">
+  Require all denied
+</FilesMatch>
+
+<FilesMatch "\.(bak|backup|swp|old|orig|original|log|sql|sh|inc)$">
+  Require all denied
+</FilesMatch>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/javascript "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType application/font-woff2 "access plus 1 year"
+</IfModule>
+
+<IfModule mod_headers.c>
+  # === SECURITY HEADERS ===
+  # HSTS: forca HTTPS no browser por 1 ano (com preload-ready)
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+  # Anti-clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+  # Bloqueia MIME-sniffing
+  Header always set X-Content-Type-Options "nosniff"
+  # Politica de referrer
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  # Restringe APIs sensiveis do navegador
+  Header always set Permissions-Policy "geolocation=(), microphone=(), camera=(), payment=(), usb=()"
+  # CSP basica permissiva em vigor (so upgrade-insecure-requests)
+  Header always set Content-Security-Policy "upgrade-insecure-requests"
+  # CSP estrita em Report-Only: observar violacoes no DevTools sem bloquear
+  # Cobre Next.js (inline hydration) + Cloudflare Insights + Google Maps embed
+  Header always set Content-Security-Policy-Report-Only "default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://cloudflareinsights.com https://*.cloudflareinsights.com; frame-src 'self' https://www.google.com https://www.youtube.com https://www.youtube-nocookie.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests"
+  # Remove banner do servidor
+  Header unset X-Powered-By
+  Header unset Server
+  Header always unset X-Powered-By
+
+  # === CACHE ===
+  <FilesMatch "^_next/static/">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=3600, must-revalidate"
+  </FilesMatch>
+  <FilesMatch "\.(xml|txt)$">
+    Header set Cache-Control "public, max-age=3600"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript
+  AddOutputFilterByType DEFLATE application/javascript application/json
+  AddOutputFilterByType DEFLATE image/svg+xml font/woff2
+  AddOutputFilterByType DEFLATE text/xml application/xml
+</IfModule>

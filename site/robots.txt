@@ -1,0 +1,143 @@
+# ==============================================================
+# robots.txt - Mediex Medicina e Seguranca do Trabalho
+# https://mediex.com.br
+# Recife/PE, Regiao Metropolitana, interior de PE e PB
+#
+# Politica: todo o conteudo e publico e livre para indexacao.
+# Nao existe area restrita neste dominio.
+#
+# COMO EDITAR SEM QUEBRAR:
+#
+# 1) Um robo obedece a UM UNICO grupo - o mais especifico que casa
+#    com o nome dele - e ignora todos os outros, inclusive o
+#    "User-agent: *". Por isso os tres grupos abaixo repetem a
+#    MESMA lista de regras. Alterou um, altere os tres.
+#    Nunca criar um grupo so com "Allow: /": isso apaga todos os
+#    Disallow para aquele robo.
+#
+# 2) A regra "Disallow: /*.txt$" barra os payloads internos do
+#    Next.js (um .txt por rota = conteudo duplicado). Todo .txt
+#    publico novo precisa de um "Allow:" proprio nos tres grupos,
+#    senao nasce bloqueado.
+#
+# 3) Antes de subir, rode:  python scripts\validate_robots.py
+#    Ele checa divergencia entre os grupos, regras sem efeito e uma
+#    suite de comportamento. Foi assim que se pegou a falta de um
+#    Disallow no grupo do AdsBot.
+# ==============================================================
+
+
+# --------------------------------------------------------------
+# 1. Regra geral - vale para todo robo nao citado adiante
+# --------------------------------------------------------------
+User-agent: *
+Allow: /
+
+# Rotas internas, sem valor de busca.
+# /__next e redundante com /*.txt$ hoje; mantido de proposito como
+# guarda, caso o Next passe a emitir artefato interno com outra
+# extensao.
+Disallow: /api/
+Disallow: /_next/data/
+Disallow: /__next
+Disallow: /enviar-orcamento.php
+Disallow: /*.txt$
+
+# Os .txt publicos, liberados um a um (ver item 2 no topo)
+Allow: /robots.txt
+Allow: /llms.txt
+Allow: /humans.txt
+Allow: /.well-known/security.txt
+Allow: /84f38d8b5aed4d7aaf7f624fd264d444.txt
+
+# NAO ha bloqueio de /_next/static/ nem de css/js/imagem: o Google
+# precisa desses arquivos para renderizar e avaliar a pagina
+# (mobile-friendly, Core Web Vitals). Bloquear /_next/, como estava
+# antes, degradava essa avaliacao.
+
+
+# --------------------------------------------------------------
+# 2. Google Ads
+#    O AdsBot NAO obedece ao "User-agent: *" - precisa de grupo
+#    proprio, senao o Google pode reprovar a pagina de destino.
+# --------------------------------------------------------------
+User-agent: AdsBot-Google
+User-agent: AdsBot-Google-Mobile
+Allow: /
+
+Disallow: /api/
+Disallow: /_next/data/
+Disallow: /__next
+Disallow: /enviar-orcamento.php
+Disallow: /*.txt$
+
+Allow: /robots.txt
+Allow: /llms.txt
+Allow: /humans.txt
+Allow: /.well-known/security.txt
+Allow: /84f38d8b5aed4d7aaf7f624fd264d444.txt
+
+
+# --------------------------------------------------------------
+# 3. IA generativa e renderizacao automatizada
+#
+#    Liberacao total, por decisao do cliente em 2026-07-29, ciente
+#    de que a lista mistura dois perfis diferentes:
+#
+#    a) Citam a fonte e mandam trafego - OAI-SearchBot,
+#       ChatGPT-User, PerplexityBot, Perplexity-User,
+#       Claude-SearchBot, Claude-User, Google-Extended,
+#       Applebot-Extended, DuckAssistBot.
+#    b) Raspam para treino, sem citar nem gerar visita - GPTBot,
+#       ClaudeBot, CCBot, Bytespider, meta-externalagent,
+#       Amazonbot, cohere-ai. O Bytespider (ByteDance) tem
+#       historico de ignorar robots.txt e de gerar carga alta.
+#
+#    CloudflareBrowserRenderingCrawler nao e IA: e a API de
+#    renderizacao headless do Cloudflare. Fica aqui so porque o
+#    bloco gerenciado do Cloudflare tambem o bloqueia.
+#
+#    O resumo curado para esses robos esta em /llms.txt
+#
+#    ESTE GRUPO SO TEM EFEITO GARANTIDO com o "Managed robots.txt"
+#    DESLIGADO no painel do Cloudflare. Ligado, o bloco dele e
+#    injetado ANTES deste arquivo e passam a existir dois grupos
+#    para o mesmo robo: o Google resolve a favor do Allow, mas isso
+#    e comportamento do parser dele, nao garantia do padrao.
+# --------------------------------------------------------------
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: GPTBot
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+User-agent: meta-externalagent
+User-agent: Amazonbot
+User-agent: Bytespider
+User-agent: CCBot
+User-agent: cohere-ai
+User-agent: DuckAssistBot
+User-agent: CloudflareBrowserRenderingCrawler
+Allow: /
+
+Disallow: /api/
+Disallow: /_next/data/
+Disallow: /__next
+Disallow: /enviar-orcamento.php
+Disallow: /*.txt$
+
+Allow: /robots.txt
+Allow: /llms.txt
+Allow: /humans.txt
+Allow: /.well-known/security.txt
+Allow: /84f38d8b5aed4d7aaf7f624fd264d444.txt
+
+
+# --------------------------------------------------------------
+# 4. Sitemap
+# --------------------------------------------------------------
+Sitemap: https://mediex.com.br/sitemap.xml

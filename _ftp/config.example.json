@@ -1,0 +1,9 @@
+{
+  "host": "ftp.seudominio.com.br",
+  "port": 21,
+  "user": "usuario@seudominio.com.br",
+  "password": "SUA_SENHA",
+  "remote_dir": "/public_html",
+  "use_tls": true,
+  "passive": true
+}

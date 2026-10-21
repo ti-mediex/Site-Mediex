@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solicitar orçamento | Mediex — Medicina e Segurança Ocupacional</title>
+<meta name="description" content="Solicite orçamento de exames ocupacionais, PCMSO, PGR, LTCAT, eSocial SST e treinamentos NR para sua empresa em Recife e Pernambuco.">
+<link rel="canonical" href="https://mediex.com.br/orcamento">
+<link rel="icon" href="/icon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Solicitar orçamento | Mediex — Medicina e Segurança Ocupacional">
+<meta property="og:description" content="Solicite orçamento de exames ocupacionais, PCMSO, PGR, LTCAT, eSocial SST e treinamentos NR para sua empresa em Recife e Pernambuco.">
+<meta property="og:url" content="https://mediex.com.br/orcamento">
+<meta property="og:image" content="https://mediex.com.br/og-image.jpg">
+<meta name="theme-color" content="#c9282d">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FVEDV9ECZD"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-FVEDV9ECZD');
+  gtag('config', 'AW-18306236317', {'allow_enhanced_conversions': true});
+  // Conversao de WhatsApp: mesmo listener e mesmo rotulo do restante do site
+  document.addEventListener('click', function(e){
+    var a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || typeof gtag !== 'function') return;
+    var h = a.getAttribute('href') || '';
+    if (h.indexOf('wa.me') === -1 && h.indexOf('whatsapp.com') === -1) return;
+    gtag('event', 'conversion', {'send_to': 'AW-18306236317/WMn1CJabxfEcEJ3_i5lE', 'value': 1.0, 'currency': 'BRL'});
+    gtag('event', 'clique_cta', {'cta': a.getAttribute('data-cta') || 'generico', 'canal': 'whatsapp', 'pagina': location.pathname});
+  }, true);
+</script>
+<style>
+.orc{display:grid;grid-template-columns:1fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+@media (max-width:900px){.orc{grid-template-columns:1fr}}
+.lista{list-style:none;padding:0;margin:1.6rem 0 0;display:grid;gap:.9rem}
+.lista li{display:flex;gap:.7rem;align-items:flex-start}
+.lista svg{flex:0 0 20px;width:20px;height:20px;margin-top:3px;stroke:var(--azul);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+.lista b{color:var(--tit);font-weight:600}
+.caixa{background:#fff;border:1px solid var(--borda);border-radius:12px;padding:clamp(1.4rem,3.5vw,2.2rem);box-shadow:0 1px 2px rgba(35,38,42,.04)}
+.lin{display:grid;grid-template-columns:1fr 1fr;gap:0 1rem}
+@media (max-width:560px){.lin{grid-template-columns:1fr}}
+.campo{margin-bottom:1rem}
+.campo label{display:block;font-size:.86rem;font-weight:600;color:var(--tit);margin-bottom:.35rem}
+.campo label small{font-weight:400;color:var(--leg)}
+.campo input,.campo select{width:100%;padding:.78rem .9rem;border:1px solid #d5d9dd;border-radius:10px;font:inherit;font-size:.97rem;color:var(--tit);background:#fff}
+.campo input:focus,.campo select:focus{outline:0;border-color:var(--azul);box-shadow:0 0 0 3px rgba(114,154,189,.25)}
+.dica{font-size:.8rem;color:var(--leg);margin:.3rem 0 0;min-height:1em}
+.aviso{font-size:.86rem;color:var(--verm);margin:-.3rem 0 1rem}
+.lgpd{display:flex;gap:.6rem;align-items:flex-start;font-size:.86rem;margin:.4rem 0 1.2rem}
+.lgpd input{margin-top:.25rem;width:17px;height:17px;accent-color:var(--verm);flex:0 0 17px}
+.lgpd a{color:var(--verm)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.ok{text-align:center;padding:1rem 0}
+.ok h2{margin-bottom:.4rem}
+.ok .btn{margin-top:1.2rem}
+.btn-larg{width:100%}
+</style>
+<style>
+:root{--verm:#c9282d;--verm-esc:#a82126;--azul:#729abd;--azul-claro:#eef3f8;--tit:#23262a;--txt:#5a6066;--leg:#8a9096;
+--sup:#f6f7f8;--borda:#e7e9eb;--branco:#fff;--zap:#00c758}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--branco);color:var(--txt);font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+img{max-width:100%;display:block}
+h1,h2,h3{color:var(--tit);line-height:1.2;letter-spacing:-.015em;margin:0 0 .5em;font-weight:600}
+h1{font-size:clamp(2rem,4.6vw,2.9rem)}
+h2{font-size:clamp(1.4rem,3vw,1.9rem)}
+h3{font-size:1.1rem}
+.wrap{width:min(1120px,100% - 2.5rem);margin-inline:auto}
+.topo{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:blur(8px);border-bottom:1px solid var(--borda)}
+.topo-in{display:flex;align-items:center;gap:1.5rem;padding:.8rem 0}
+.topo img{height:36px;width:auto}
+.menu{display:flex;gap:.2rem;margin-left:auto;flex-wrap:wrap}
+.menu a{text-decoration:none;font-size:.92rem;font-weight:500;color:var(--txt);padding:.45rem .8rem;border-radius:8px}
+.menu a:hover,.menu a[aria-current]{color:var(--verm);background:#fbeaea}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;border:0;border-radius:10px;padding:.8rem 1.35rem;font-weight:600;font-size:.95rem;line-height:1.2;font-family:inherit;text-decoration:none;cursor:pointer;transition:background .15s,transform .15s}
+.btn-verm{background:var(--verm);color:#fff}.btn-verm:hover{background:var(--verm-esc)}
+.btn-azul{background:var(--azul);color:#fff}.btn-azul:hover{filter:brightness(.93)}
+.btn-zap{background:var(--zap);color:#fff}
+.btn:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+.btn[disabled]{opacity:.65;cursor:progress}
+.cab{padding:clamp(3rem,7vw,5rem) 0 clamp(2rem,4vw,2.8rem);border-bottom:1px solid var(--borda)}
+.olho{display:inline-block;font-size:.76rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--verm);margin-bottom:.8rem}
+.sub{font-size:1.08rem;max-width:62ch;margin:0}
+.sec{padding:clamp(3rem,7vw,6rem) 0}
+.rodape{background:var(--sup);border-top:1px solid var(--borda);padding:2.4rem 0;font-size:.88rem;color:var(--leg)}
+.rodape-in{display:flex;flex-wrap:wrap;gap:1rem 2rem;justify-content:space-between;align-items:center}
+.rodape b{color:var(--tit);font-weight:600}
+.rodape a{text-decoration:none;color:var(--txt)}.rodape a:hover{color:var(--verm)}
+.flutua{position:fixed;right:1.1rem;bottom:1.1rem;z-index:60;width:56px;height:56px;border-radius:50%;background:var(--zap);display:grid;place-items:center;box-shadow:0 6px 20px rgba(0,0,0,.18)}
+.flutua svg{width:28px;height:28px;fill:#fff}
+@media (max-width:760px){.menu{display:none}.topo-in .btn{margin-left:auto}}
+</style>
+<!-- RD Station Marketing --><script type="text/javascript" async src="https://d335luupugsy2.cloudfront.net/js/loader-scripts/3421751a-9f42-4573-bc1b-40d9bc00a05d-loader.js"></script></head>
+<body>
+<header class="topo"><div class="wrap topo-in"><a href="/" aria-label="Mediex - página inicial"><img src="/logo-mediex.svg" alt="Mediex" width="143" height="36"></a><nav class="menu" aria-label="Principal"><a href="/">Início</a><a href="/#servicos">Serviços</a><a href="/#sobre">Sobre</a><a href="/blog">Blog</a><a href="/#contato">Contato</a></nav><a class="btn btn-verm" href="/orcamento">Solicitar orçamento</a></div></header>
+<main>
+
+<section class="sec"><div class="wrap orc">
+  <div>
+    <span class="olho">Orçamento</span>
+    <h1>Solicite um orçamento para a sua empresa</h1>
+    <p class="sub">Conte o essencial sobre a empresa e retornamos com a proposta. Você não precisa preparar nada antes.</p>
+    <ul class="lista">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Retorno do comercial</b> pelo canal que você preferir: WhatsApp ou e-mail.</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Proposta sem compromisso</b>, montada conforme o porte e os riscos da operação.</span></li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg><span><b>Exames na clínica ou na empresa</b>, com unidades móveis em Recife e região.</span></li>
+    </ul>
+  </div>
+
+  <div class="caixa">
+    <form id="form-orc" novalidate>
+      <div class="campo"><label for="o-nome">Nome</label><input id="o-nome" name="nome" required autocomplete="name"></div>
+      <div class="lin">
+        <div class="campo"><label for="o-cnpj">CNPJ <small>(opcional)</small></label><input id="o-cnpj" name="cnpj" inputmode="numeric" placeholder="00.000.000/0000-00" autocomplete="off"><p class="dica" id="o-cnpj-dica"></p></div>
+        <div class="campo"><label for="o-empresa">Empresa</label><input id="o-empresa" name="empresa" required autocomplete="organization"></div>
+      </div>
+      <div class="lin">
+        <div class="campo"><label for="o-tel">WhatsApp</label><input id="o-tel" name="telefone" type="tel" inputmode="tel" placeholder="(81) 90000-0000" autocomplete="tel"></div>
+        <div class="campo"><label for="o-email">E-mail</label><input id="o-email" name="email" type="email" inputmode="email" placeholder="voce@empresa.com.br" autocomplete="email"></div>
+      </div>
+      <p class="aviso" id="o-contato-aviso" hidden>Informe WhatsApp ou e-mail para o retorno.</p>
+      <div class="lin">
+        <div class="campo"><label for="o-colab">Nº de colaboradores</label>
+          <select id="o-colab" name="colaboradores" required>
+            <option value="">Selecione</option><option>Até 20</option><option>21 a 100</option><option>101 a 500</option><option>Acima de 500</option>
+          </select></div>
+        <div class="campo"><label for="o-cidade">Cidade</label><input id="o-cidade" name="cidade" autocomplete="address-level2"></div>
+      </div>
+      <div class="campo"><label for="o-serv">Serviço de interesse</label>
+        <select id="o-serv" name="servico">
+          <option value="">Selecione</option><option>Exames ocupacionais / ASO</option><option>PCMSO</option><option>PGR</option><option>LTCAT</option>
+          <option>Laudos de insalubridade e periculosidade</option><option>eSocial SST</option><option>Treinamentos NR</option>
+          <option>Ergonomia / AET</option><option>Atendimento in company</option><option>Pacote completo de documentação (PGD)</option><option>Outro</option>
+        </select></div>
+      <div class="hp" aria-hidden="true"><label>Site <input name="website" tabindex="-1" autocomplete="off"></label></div>
+      <label class="lgpd"><input type="checkbox" id="o-lgpd" required><span>Concordo com o uso dos meus dados para retorno comercial, conforme a <a href="/politica-de-privacidade" target="_blank" rel="noopener">Política de Privacidade</a>.</span></label>
+      <button class="btn btn-verm btn-larg" type="submit" id="o-enviar">Solicitar orçamento</button>
+      <p class="dica" id="o-erro" role="alert"></p>
+    </form>
+    <div class="ok" id="o-ok" hidden>
+      <h2>Recebemos sua solicitação</h2>
+      <p>O comercial da Mediex vai entrar em contato em breve. Se preferir adiantar a conversa, fale pelo WhatsApp.</p>
+      <a class="btn btn-zap" id="o-zap" href="https://wa.me/558130729818" target="_blank" rel="noopener" data-cta="orcamento-sucesso">Falar no WhatsApp</a>
+    </div>
+  </div>
+</div></section>
+<script>
+(function(){
+  var f = document.getElementById('form-orc');
+  var $ = function(id){ return document.getElementById(id); };
+  var so = function(v){ return String(v || '').replace(/\D/g, ''); };
+
+  // Origem do anuncio (gclid/utm): guardada 30 dias e enviada junto do lead,
+  // sem aparecer para o cliente em lugar nenhum.
+  function origemAds(){
+    var CHAVE = 'mediex_origem_ads', DIAS = 30 * 864e5;
+    var p = new URLSearchParams(location.search);
+    var g = p.get('gclid'), c = p.get('utm_campaign') || p.get('utm_source');
+    var v = g ? 'gclid:' + g : (c ? 'utm:' + c : '');
+    try {
+      if (v) localStorage.setItem(CHAVE, JSON.stringify({v: v, t: Date.now()}));
+      else { var o = JSON.parse(localStorage.getItem(CHAVE) || 'null'); if (o && Date.now() - o.t < DIAS) v = o.v; }
+    } catch (e) {}
+    return v ? ' | ' + v : '';
+  }
+
+  // Item 15: preenche empresa e cidade pelo CNPJ (BrasilAPI), mesma fonte do pop-up do site
+  var ultimo = '';
+  $('o-cnpj').addEventListener('input', function(){
+    var c = so(this.value), dica = $('o-cnpj-dica');
+    if (c.length !== 14 || c === ultimo) { if (c.length < 14) dica.textContent = ''; return; }
+    ultimo = c; dica.textContent = 'Consultando CNPJ...';
+    fetch('https://brasilapi.com.br/api/cnpj/v1/' + c).then(function(r){ return r.ok ? r.json() : Promise.reject(); })
+      .then(function(d){
+        if (!$('o-empresa').value) $('o-empresa').value = d.nome_fantasia || d.razao_social || '';
+        if (!$('o-cidade').value && d.municipio) $('o-cidade').value = d.municipio.charAt(0) + d.municipio.slice(1).toLowerCase();
+        dica.textContent = 'Dados preenchidos a partir do CNPJ.';
+      }).catch(function(){ dica.textContent = 'Não encontramos este CNPJ — preencha manualmente.'; });
+  });
+
+  f.addEventListener('submit', function(e){
+    e.preventDefault();
+    var tel = $('o-tel').value.trim(), mail = $('o-email').value.trim();
+    // Item 11: basta um dos dois contatos
+    var semContato = !tel && !mail;
+    $('o-contato-aviso').hidden = !semContato;
+    if (semContato || !f.reportValidity()) return;
+
+    var btn = $('o-enviar'); btn.disabled = true; btn.textContent = 'Enviando...'; $('o-erro').textContent = '';
+    var dados = {
+      nome: $('o-nome').value.trim(), empresa: $('o-empresa').value.trim(), cnpj: $('o-cnpj').value.trim(),
+      cidade: $('o-cidade').value.trim(), telefone: tel, email: mail, colaboradores: $('o-colab').value,
+      servicos: $('o-serv').value ? [$('o-serv').value] : [], origem: 'orcamento-site' + origemAds(), pagina: '/orcamento',
+      criadoEm: new Date().toISOString(), website: f.website.value
+    };
+    var zapTxt = 'Olá! Vim pelo site e quero um orçamento.\nNome: ' + dados.nome + '\nEmpresa: ' + dados.empresa +
+                 '\nColaboradores: ' + dados.colaboradores + (dados.servicos[0] ? '\nServiço: ' + dados.servicos[0] : '');
+    $('o-zap').href = 'https://wa.me/558130729818?text=' + encodeURIComponent(zapTxt);
+
+    fetch('/enviar-orcamento.php', {method: 'POST', headers: {'Content-Type': 'application/json'}, body: JSON.stringify(dados)})
+      .then(function(r){ return r.json().catch(function(){ return {ok: false}; }); })
+      .then(function(res){
+        if (!res.ok) throw new Error('falha');
+        if (typeof gtag === 'function') {
+          gtag('set', 'user_data', {email: mail.toLowerCase() || undefined, phone_number: so(tel) ? '+55' + so(tel).replace(/^55/, '') : undefined});
+          gtag('event', 'gerar_lead', {origem: 'orcamento-site', colaboradores: dados.colaboradores, servico: dados.servicos[0] || ''});
+          gtag('event', 'conversion', {'send_to': 'AW-18306236317/e8RqCJObxfEcEJ3_i5lE'});
+        }
+        f.hidden = true; $('o-ok').hidden = false;
+      })
+      .catch(function(){
+        btn.disabled = false; btn.textContent = 'Solicitar orçamento';
+        $('o-erro').innerHTML = 'Não conseguimos enviar agora. <a href="' + $('o-zap').href + '" target="_blank" rel="noopener" data-cta="orcamento-erro">Envie pelo WhatsApp</a> e não perca a solicitação.';
+      });
+  });
+})();
+</script>
+</main>
+<footer class="rodape"><div class="wrap rodape-in"><div><b>Mediex</b> — Medicina e Segurança Ocupacional<br>R. Gen. Góes Monteiro, 448 — Imbiribeira, Recife/PE · <a href="tel:+558130729818">(81) 3072-9818</a></div><div><a href="/politica-de-privacidade">Política de Privacidade</a></div></div></footer><a class="flutua" href="https://wa.me/558130729818?text=Ol%C3%A1!%20Vim%20pelo%20site." target="_blank" rel="noopener" data-cta="flutuante" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38c1.45.79 3.08 1.21 4.79 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01c-1.52 0-3.01-.41-4.31-1.18l-.31-.18-3.2.84.85-3.12-.2-.32a8.21 8.21 0 0 1-1.26-4.38c0-4.54 3.7-8.23 8.24-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.69 8.23-8.23 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.17.24-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.11-.22-.17-.47-.29z"/></svg></a>
+</body>
+</html>

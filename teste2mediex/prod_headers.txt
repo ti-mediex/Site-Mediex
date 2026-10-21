@@ -1,0 +1,8 @@
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: SAMEORIGIN
+x-content-type-options: nosniff
+referrer-policy: strict-origin-when-cross-origin
+permissions-policy: geolocation=(), microphone=(), camera=(), payment=(), usb=()
+content-security-policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com https://www.googletagmanager.com https://googleads.g.doubleclick.net https://elfsightcdn.com https://static.elfsight.com https://*.clarity.ms; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://cloudflareinsights.com https://*.cloudflareinsights.com https://brasilapi.com.br https://pisctwabgnfthixgyhco.supabase.co https://*.elfsight.com https://*.elfsightcdn.com https://api.featurable.com https://www.googletagmanager.com https://*.google-analytics.com https://*.analytics.google.com https://www.google.com https://google.com https://www.google.com.br https://google.com.br https://*.doubleclick.net https://www.googleadservices.com https://*.clarity.ms https://c.bing.com; frame-src 'self' https://www.google.com https://www.youtube.com https://www.youtube-nocookie.com https://td.doubleclick.net https://www.googletagmanager.com; media-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+cross-origin-opener-policy: same-origin
+cross-origin-resource-policy: same-origin

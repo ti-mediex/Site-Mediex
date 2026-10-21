@@ -1,0 +1,20 @@
+# Credenciais — NUNCA versionar
+# A senha do FTP fica em texto puro aqui (ver _ftp/LEIA-ME.md).
+_ftp/config.json
+# Tem a senha do SMTP da Locaweb em texto puro. O codigo, sem as credenciais,
+# esta em exemplos/enviar-orcamento.php. O arquivo real NAO pode ser alterado
+# aqui: o upload.py compara hash e subiria a versao sem senha, quebrando o
+# envio de leads em producao.
+site/enviar-orcamento.php
+
+# Copia de teste local (quase identica a site/, com experimentos de texto).
+# As ferramentas dela SAO versionadas: teste2mediex/ferramentas/ e serve.py.
+teste2mediex/site/
+
+# Runtime do canvas Maestri (papeis de agente, local)
+.maestri/
+
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

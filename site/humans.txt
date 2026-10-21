@@ -1,0 +1,50 @@
+/* EQUIPE */
+
+	Mediex Solucoes em Saude e Seguranca Ocupacional
+	Medicina e seguranca do trabalho
+	Contato: comercial [at] mediex.com.br
+	Telefone: +55 81 3072-9818
+	Local: Recife, Pernambuco, Brasil
+
+	Corpo clinico: medicos do trabalho, enfermagem do trabalho
+	                e tecnicos em seguranca do trabalho
+	Equipe tecnica: engenharia de seguranca, higiene ocupacional
+	                e ergonomia
+	Comercial e atendimento: equipe propria, em Recife
+
+
+/* AGRADECIMENTOS */
+
+	Aos clientes que confiam a saude de suas equipes a Mediex,
+	e aos profissionais parceiros que viabilizam o atendimento
+	no interior de Pernambuco e em Fernando de Noronha.
+
+
+/* SITE */
+
+	Site: https://mediex.com.br
+	Idioma: Portugues (pt-BR)
+	Doctype: HTML5
+	Ultima atualizacao: 2026-07-29
+
+	Padroes: HTML5, CSS3, ECMAScript 2023, Schema.org (JSON-LD),
+	         Open Graph, WAI-ARIA
+	Stack: Next.js 16 (App Router, export estatico), React 19,
+	       TypeScript 5, Tailwind CSS 4
+	Hospedagem: cPanel + Cloudflare
+	Renderizacao: estatica, sem servidor de aplicacao
+
+	Arquivos irmaos:
+	  /robots.txt                 regras de rastreamento
+	  /sitemap.xml                mapa das paginas
+	  /llms.txt                   resumo para modelos de linguagem
+	  /.well-known/security.txt   canal para relato de vulnerabilidades
+
+
+                  __  __          _ _
+                 |  \/  | ___  __| (_) _____  __
+                 | |\/| |/ _ \/ _` | |/ _ \ \/ /
+                 | |  | |  __/ (_| | |  __/>  <
+                 |_|  |_|\___|\__,_|_|\___/_/\_\
+
+           Saude e seguranca ocupacional  -  Recife/PE
