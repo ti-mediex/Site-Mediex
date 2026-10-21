@@ -19,9 +19,9 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: site/
           server-dir: /
+          dangerous-clean-slate: true
           exclude: |
-            **/_backups/**
-            **/node_modules/**
-            **/.git/**
-            **/.github/**
+            **/enviar-orcamento.php
+            **/.htaccess.bak-*
